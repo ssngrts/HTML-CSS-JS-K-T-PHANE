@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <h1>Şifre Doğrulama</h1>
+        <input type="password" id="password" 
+        placeholder="Enter password" oninput="check()" >
+        <br>
+        <div id="set">
+            <div id="count">Uzunluk: 0</div>
+            <i id="see" onclick="see()" class="fa fa-eye"></i>
+        </div>
+        <div id="check-long">
+            <i class="far fa-check-circle"></i><span>5 harften fazla olmalı</span>
+        </div>
+        <div id="check-short">
+            <i class="far fa-check-circle"></i><span>10 harften az olmalı</span>
+        </div>
+        <div id="check-number">
+            <i class="far fa-check-circle"></i><span>Rakam içermeli</span>
+        </div>
+        <div id="check-special">
+            <i class="far fa-check-circle"></i><span>Özel karakter içermeli</span>
+        </div>
+        <!-- <div id="check-space">
+            <i class="far fa-check-circle"></i><span>Harf arasında boşluk bırakılmamalı</span>
+        </div> -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

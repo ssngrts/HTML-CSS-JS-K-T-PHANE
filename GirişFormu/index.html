@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Hesap Oluştur</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" placeholder="istediğiniz kullanıcı adını giriniz..." id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Hata</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email: </label>
+                <input type="email" placeholder="bir mail adresi giriniz..." id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Hata</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Şifre: </label>
+                <input type="password" placeholder="şifre giriniz..." id="password"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Hata</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Şire: </label>
+                <input type="password" placeholder="tekrar şifrenizi giriniz..." id="password2"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Hata</small>
+            </div>
+            <button>Kaydet</button>
+        </form>
+    </div>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>

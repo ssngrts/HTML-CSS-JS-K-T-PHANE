@@ -1,0 +1,63 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  color:#FFFFFF;
+}
+
+#download-btn {
+  background:#00b1ff;
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  width: 140px;
+  text-align: center;
+  transition: width 0.5s;
+}
+
+#download-btn.downloading {
+  height: 10px;
+  width: 300px;
+  cursor: wait;
+}
+
+#download-btn span {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+
+#download-btn.downloading span {
+  top: 15px;
+}
+
+#download-btn .progress-bar {
+  width: 0;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+
+#download-btn.downloading .progress-bar {
+  height: 100%;
+}
